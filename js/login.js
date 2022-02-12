@@ -7,7 +7,7 @@ document.getElementById('logInButton').addEventListener('click', function(){
        document.getElementById('error-pass-number').style.display="block";
    } else {
        if(userId == 'ami-eliyas' && passwordValue == 'howAreYou'){
-           window.location.href = 'islamiBank.html'
+           window.location.href = 'bankOfAmerica.html'
        }
    }
 })
