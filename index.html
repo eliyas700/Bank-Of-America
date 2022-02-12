@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Of America | Online Banking | Log In | Online Id</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/27412e92d1.js" crossorigin="anonymous"></script>
+    <!--Bootstrap Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="">
+       <nav class="d-flex justify-content-between BA-container py-3 ">
+           <div class="d-flex">
+            <img class="icon ps-3 pe-3 " width="230px" src="images/BofA_rgb.png" alt="Bank Of America">
+            <h5 class="text-black-50 d-flex align-items-center">Log In</h5>
+           </div>
+           <div class="d-flex align-items-baseline">
+               <p class="text-black-50 fw-bold"><i class="fa-solid fa-lock"></i><small class="px-2">Secure Area</small></p>
+               <small class="text-black-50">En español</small>
+           </div>
+       </nav> 
+
+    </header>
+    <main class="BA-container">
+        <section class=" bg-red">
+            <h4 class="text-white py-3 ps-4">Log In to Online Banking</h4>
+        </section>
+        <section class="container">
+            <div class="row sub-container">
+                <div class="col-lg-4 ps-4 pe-4 border-end mt-4">
+                    <label for="userID" class="fs-5 my-2 ">User ID</label>
+                    <br>
+                    <input class="w-75" id="userID" type="text">
+                    <br>
+                    <input type="checkbox" id="remID" name="saveMyID">
+                    <label for="remID" class=" pt-2">Save this User ID</label>
+                    <a class="boa-dialog force-xlarge info-layer-help-fsd dotted" href="javascript:void(0);" name="online-id-help" rel="help-content" title="Help"><img src="images/help-qm-fsd.png" alt="">
+                    </a>
+
+                    <div class="pt-5">
+                        <label id="" for="tlpvt-passcode-input" class="mb-2 fs-5">Password<span id="error-pass-number" class=""> is unavailable. Please enter atleast 6 characters of online id to enable Passcode</span></label>
+
+                        <input type="password" class=" w-75" id="password-input" name="dummy-passcode" maxlength="20" value="" autocomplete="off">
+                        
+                        <a href="/login/reset/entry/forgotIDPwdScreen.go" class="d-block mt-3 mb-4 text-decoration-none" name="forgot-your-passcode"><small>Forgot your Password?</small></a>
+                        <button id="logInButton" class="log-in-button text-white fw-bold px-3 rounded"><i class="fa-solid fa-unlock-keyhole me-2"></i>Log In </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 ms-4 mt-4">
+                    <div class="">
+                        <p class="cnx-regular title enroll-color-gray mbtm-10 text-secondary">Stay connected with our app</p>
+                        <div class="d-flex align-items-center   justify-content-center">
+                            <img height="208" width="149" src="Images/mobile_llama.png" alt="Mobile banking Llama" class="ms-2">
+                            <div class=" ms-3">
+                                <div class="w-100 text-secondary">Secure, convenient banking anytime</div>
+                                <a id="choose-device-get-the-app" name="choose-device-get-the-app" class="get-app text-white fw-bold rounded mt-3 d-block text-center" href="javascript:void(0);" rel="mobile-app-download-choose-device">Get the app</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  mt-4">
+                    <div class="side-well-vipaa-module">
+                        <div class="ms-3">
+                         <h6 class="border-bottom  pb-3">Login help</h6>
+                            <ul class=" ps-0">
+                                        <li class="pb-3"><a class="arrow" href="/login/reset/entry/forgotIDPwdScreen.go" name="Forgot ID/Password?"><small>Forgot ID/Password?</small></a></li>
+                                        <li class="pb-3"><a class="arrow" href="https://www.bankofamerica.com/customer-service/contact-us/bank-of-america-login-issues/" name="Problem logging in?"><small>Problem logging in?</small></a></li>
+                            </ul>
+                        </div>
+                        <div class="ms-3">
+                               <h6 class="border-bottom  pb-3">Not using Online Banking?</h6>
+                            <ul class="ps-0">
+                                            <li class="pb-3"><a class="arrow" href="/login/enroll/entry/olbEnroll.go?reason=model_enroll" name="Enroll_now"><small>Enroll now<span class="ada-hidden">  for online Banking</span></small></a></li>
+                                            <li class="pb-3"><a class="arrow" href="https://www.bankofamerica.com/onlinebanking/learning-center.go" name="Learn_more_about_Online_Banking_dotcom"><small>Learn more about Online Banking</small></a></li>
+                                            <li class="pb-3"><a class="arrow" href="https://www.bankofamerica.com/online-banking/service-agreement.go" name="Service_Agreement_dotcom"><small>Service Agreement</small></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="BA-container mt-5 bg-ash p-4">
+        <div class="gray-bground-skin cssp">
+            <div class="text-secondary mb-3"> <i class="fa-solid fa-lock"></i> Secure area</div>
+        
+           
+          <div class="link-container">
+             <div class="link-row"> 
+                    
+                    <a href="https://www.bankofamerica.com/security-center/privacy-overview/" name="Privacy_&amp;_Security_footer" title="Privacy" class="border-end  pe-2 border-primary" target="_blank">Privacy</a>
+                    
+                    <a class="last-link" href="https://www.bankofamerica.com/security-center/overview/" name="Security" title="Security" target="_blank" class="ps-2">Security</a>
+                    <div class="clearboth"></div>
+             </div>
+          </div>
+          <small class="text-secondary">Bank of America, N.A. Member FDIC. <a href="https://www.bankofamerica.com/help/equalhousing-popup/" name="Equal_Housing_Lender" target="_blank">Equal Housing Lender</a> <br>©&nbsp;2021 Bank of America Corporation.</small>
+       </div>
+    </footer>
+     <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+    
+</body>
+</html>

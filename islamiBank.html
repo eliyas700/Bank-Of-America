@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Bank of America</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <header class="">
+            <nav class="d-flex justify-content-between BA-container py-3 ">
+                <div class="d-flex">
+                 <img class="icon ps-3 pe-3 " width="230px" src="images/BofA_rgb.png" alt="Bank Of America">
+                
+                </div>
+                
+            </nav> 
+            <section class=" bg-red BA-container mt-4">
+                <h4 class="text-white py-6 pl-6">Welcome to Online Banking</h4>
+            </section>
+         </header>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section>
+            <div class="grid grid-cols-3 gap-4  my-12 text-white text-center">
+                <div class="bg-green-400 px-4 py-12 rounded">
+                    <h2 class="text-2xl font-semibold mb-4">Deposit</h2>
+                    <h3 class="text-4xl font-semibold">$<span id="deposit-update">000.00</span></h3>
+                </div>
+                <div class="bg-yellow-400 px-4 py-12 rounded">
+                    <h2 class="text-2xl font-semibold mb-4">Withdraw</h2>
+                    <h3 class="text-4xl font-semibold">$<span id="withdraw-update">000.00</span> </h3>
+                </div>
+                <div class="bg-teal-400 px-4 py-12 rounded">
+                    <h2 class="text-2xl font-semibold mb-4">Balance</h2>
+                    <h3 class="text-4xl font-semibold">$ <span id="total-balance">1243.67</span> </h3>
+                </div>
+            </div>
+        </section>
+        <section class="mb-80">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-green-800 text-white py-4">
+                    <h3 class="text-2xl font-semibold my-2 text-center ">Please Deposit</h3>
+                    <input id="deposit-input" type="number" class=" w-3/4 block my-4 py-2 pl-3 rounded border-2 border-orange-200 mx-auto text-lg text-black font-semibold" placeholder=" Type Your Deposit $ Amount">
+
+                    <button id="deposit-button" class="bg-orange-500 px-6 py-2 font-semibold  rounded  text-center block mx-auto mt-5">Deposit</button>
+                </div>
+                <div class="bg-yellow-600 text-white py-4">
+                    <h3 class="text-2xl font-semibold my-2 text-center ">Please Withdraw</h3>
+                    <input id="withdraw-input" type="number" class=" w-3/4 block my-4 py-2 pl-3 rounded border-2 border-orange-200 mx-auto text-lg text-black font-semibold" placeholder=" Type Your Withdraw $ Amount">
+
+                    <button id="withdraw-button" class="bg-orange-500 px-6 py-2 font-semibold  rounded  text-center block mx-auto mt-5" >Withdraw</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <button id="button">Make Background Red</button>
+
+    <p id="c-balance"> Current Balance : 300 </p>
+ <input id="input" type="text">
+ <button onclick="add()" id="add-btn"> Add Money </button>
+    
+    <script src="js/bank.js"></script>
+</body>
+</html>

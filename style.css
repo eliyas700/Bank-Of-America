@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.bg-red {
+  background-color: #dc1431;
+}
+.bg-ash {
+  background-color: #f3efea;
+}
+.BA-container {
+  width: 78%;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 239px;
+  height: 30px;
+}
+.boa-dialog {
+  height: 21px;
+  width: 18px;
+}
+.log-in-button {
+  background-color: #173d90;
+  border-color: #124e89;
+  font-size: 12px;
+}
+#error-pass-number {
+  display: block;
+  font-size: 8px;
+  color: #dc1431;
+  display: none;
+}
+.get-app {
+  background-color: #bb292b;
+  text-decoration: none;
+  padding: 8px 0;
+}
